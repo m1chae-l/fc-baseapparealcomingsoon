@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+:root {
+    --DesaturatedRed: hsl(0, 36%, 70%);
+    --SoftRed: hsl(0, 93%, 68%);
+    --DarkGrayishRed: hsl(0, 6%, 24%);
+    --gradient1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    --gradient2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Josefin Sans;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    margin: 0;
+    padding: 0;
+    background-image: url("./images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    /* display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto auto;
+    place-content: center; */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.cmsleft {
+    padding: 0 300px 0 150px;
+}
+
+.logo {
+    padding-top: 64px;
+    position: absolute;
+    padding-left: 150px;
+}
+
+.h1 {
+    color: var(--DarkGrayishRed);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 72px;
+    letter-spacing: 20px;
+    margin-bottom: 32px;
+}
+
+.h1S {
+    color: var(--DesaturatedRed);
+    font-weight: 300;
+}
+
+.info {
+    color: var(--DesaturatedRed);
+    font-size: 16px;
+    word-spacing: 2.5px;
+    line-height: 1.5;
+    margin: 0 0 32px 0;
+    padding: 0;
+}
+
+.cmsinfo {
+    display: flex;
+    flex-direction: column;
+    margin: 128px 0 0 0;
+}
+
+
+input[type=email] {
+    background: transparent;
+    width: 90%;
+    color: var(--DarkGrayishRed);
+    font-family: Josefin Sans;
+    padding: 20px 20px;
+    margin: 0;
+    box-sizing: border-box;
+    border: 2px solid var(--DesaturatedRed);
+    border-radius: 30px;
+    outline: none;
+}
+
+input[type=email]:focus {
+    border: 2px solid var(--SoftRed);
+}
+
+.sumbit-btn {
+    background: var(--gradient2);
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 16px 40px;
+    border-radius: 30px;
+    position: absolute;
+    margin-left: -60px;
+
+}
+
+.sumbit-btn:hover {
+    background: hsl(0, 63%, 87%);
+    cursor: pointer;
+    box-shadow: 10px 5px 20px 8px rgba(222, 189, 189, 0.58);
+}
+
+.imgdesktop {
+    /* grid-row: 1 / 3;
+    grid-column: 2;
+    min-width: 50%;
+    overflow: hidden;
+    height: 100vh;
+    object-fit: cover; 
+     max-width: 60%;
+    height: auto; 
+    min-height: 100vh;
+    overflow: hidden;
+    width: 100%; */
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: 1.5em;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
